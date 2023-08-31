@@ -1,7 +1,7 @@
 from flask import Flask, request, jsonify
 from chatbot_api import ChatGPTBotAPI
 
-OPEN_AI_API_KEY = "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"
+OPEN_AI_API_KEY = "API_KEY"
 app = Flask(__name__)
 
 # Initialize the ChatGPTBotAPI instance

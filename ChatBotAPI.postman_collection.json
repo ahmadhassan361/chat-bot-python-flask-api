@@ -1,0 +1,191 @@
+{
+	"info": {
+		"_postman_id": "b458788e-36cb-43bf-b573-c5ef8eee3851",
+		"name": "ChatBotAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "delete prompt",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "xxx-header",
+						"value": "8d323a75adf39a167b7e319a6255211fbf133eefcc4d520aa664834e0f0f7a74",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prompt\":\"tell me about python\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/delete_prompt/0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"delete_prompt",
+						"0"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "season",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update prompt",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "xxx-header",
+						"value": "8d323a75adf39a167b7e319a6255211fbf133eefcc4d520aa664834e0f0f7a74",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prompt\":\"tell me about python\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/update_prompt/0",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"update_prompt",
+						"0"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "season",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get prompt with response",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "xxx-header",
+						"value": "8d323a75adf39a167b7e319a6255211fbf133eefcc4d520aa664834e0f0f7a74",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prompt\":\"tell me about python\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/get_response/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"get_response",
+						"1"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "season",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create prompt",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "xxx-header",
+						"value": "8d323a75adf39a167b7e319a6255211fbf133eefcc4d520aa664834e0f0f7a74",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prompt\":\"tell me about data science\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:5000/create_prompt",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"create_prompt"
+					],
+					"query": [
+						{
+							"key": "search",
+							"value": "season",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
